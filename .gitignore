@@ -1,0 +1,7 @@
+# Photos brutes : lourdes (~145 Mo) et porteuses de metadonnees EXIF/GPS.
+# Seuls les WebP generes dans images/ sont publies. Voir CLAUDE.md.
+pictures/
+
+.DS_Store
+node_modules/
+__pycache__/

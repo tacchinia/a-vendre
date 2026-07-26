@@ -1,0 +1,185 @@
+{
+  "title": "À vendre / à donner",
+  "intro": "Aucun prix n'est fixé : tout est à discuter, gratuit ou contre une somme à convenir. Les objets peuvent partir à l'unité ou par lot.",
+  "contact": {
+    "email": "alexandre.tacchini+petites-annonces@gmail.com"
+  },
+  "categories": [
+    {
+      "id": "materiel-cave",
+      "label": "Matériel de cave",
+      "items": [
+        {
+          "id": "IMG_0494",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0495",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0496",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0497",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0498",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0499",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0500",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0501",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0502",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0503",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0504",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0505",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0507",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0509",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0510",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0515",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0517",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0518",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0519",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0584",
+          "status": "available"
+        }
+      ]
+    },
+    {
+      "id": "materiel-bricolage",
+      "label": "Matériel de bricolage",
+      "items": [
+        {
+          "id": "IMG_0506",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0575",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0576",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0577",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0578",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0579",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0580",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0581",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0582",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0583",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0585",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0586",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0587",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0588",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0589",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0590",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0591",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0592",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0593",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0594",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0595",
+          "status": "available"
+        }
+      ]
+    }
+  ]
+}

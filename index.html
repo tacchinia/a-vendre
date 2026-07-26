@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À vendre / à donner</title>
+<meta name="description" content="Galerie d'objets à vendre ou à donner. Aucun prix fixé, tout est à discuter, à l'unité ou par lot.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="À vendre / à donner">
+<meta property="og:description" content="Galerie d'objets à vendre ou à donner. Aucun prix fixé, tout est à discuter.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%8F%B7%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <h1 id="site-title">À vendre / à donner</h1>
+    <p class="intro" id="site-intro"></p>
+    <p class="intro">
+      <a class="contact-btn" id="contact-link" href="#">Écrire un message</a>
+    </p>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Filtres">
+  <div class="wrap toolbar-inner">
+    <div class="chips" id="filters" role="group" aria-label="Filtrer par catégorie"></div>
+    <label class="switch">
+      <input type="checkbox" id="hide-gone">
+      <span>Masquer ce qui est parti</span>
+    </label>
+  </div>
+</nav>
+
+<main class="wrap">
+  <noscript>
+    <p class="empty">Cette galerie a besoin de JavaScript pour afficher les photos.</p>
+  </noscript>
+  <p class="count" id="count" aria-live="polite"></p>
+  <div id="gallery"></div>
+  <p class="empty" id="empty" hidden>Aucun objet ne correspond à ce filtre.</p>
+</main>
+
+<footer class="wrap site-footer">
+  <p>Les photos sont indicatives. Pour tout objet, écrivez-moi :
+    <a id="contact-link-footer" href="#">contact</a>.</p>
+</footer>
+
+<!-- Visionneuse plein écran -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo en grand" hidden>
+  <button class="lb-btn lb-close" id="lb-close" aria-label="Fermer">&times;</button>
+  <button class="lb-btn lb-prev" id="lb-prev" aria-label="Photo précédente">&#8249;</button>
+  <button class="lb-btn lb-next" id="lb-next" aria-label="Photo suivante">&#8250;</button>
+  <figure class="lb-figure">
+    <img id="lb-img" alt="">
+    <figcaption class="lb-caption">
+      <span id="lb-label"></span>
+      <a class="contact-btn small" id="lb-contact" href="#">Ça m'intéresse</a>
+    </figcaption>
+  </figure>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
