@@ -102,11 +102,17 @@ deviné depuis le nom du dossier — le corriger à la main dans le JSON
 
 Modifier son `status` dans `data/items.json`, puis commiter :
 
-| `status`      | Affichage                                                                             |
-|---------------|---------------------------------------------------------------------------------------|
-| `"available"` | normal, compté dans « N objets disponibles »                                          |
-| `"reserved"`  | badge « Réservé », photo atténuée, non compté                                         |
-| `"sold"`      | badge « Parti », photo en gris, bouton contact masqué, masquable via la case à cocher |
+| `status`      | Affichage                                                                                                    |
+|---------------|--------------------------------------------------------------------------------------------------------------|
+| `"available"` | normal, compté dans « N objets disponibles »                                                                 |
+| `"reserved"`  | badge « Réservé », photo atténuée, non compté                                                                |
+| `"sold"`      | **masqué par défaut** ; visible en décochant la case : badge « Parti », photo en gris, bouton contact masqué |
+
+La case « Masquer ce qui est parti » est cochée au chargement : les objets
+`sold` sont donc invisibles tant qu'on ne la décoche pas, et les compteurs des
+filtres n'affichent que ce qui est réellement montré. Exception : un lien
+partagé vers un objet parti (`…/#materiel-cave/IMG_0494`) décoche
+automatiquement la case pour que la photo s'ouvre quand même.
 
 ## Retirer un objet
 

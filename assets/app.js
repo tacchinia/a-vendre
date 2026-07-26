@@ -69,34 +69,39 @@
 
   /* ---------- rendu ---------- */
 
-  function allItems() {
-    var out = [];
-    data.categories.forEach(function (category) {
-      (category.items || []).forEach(function (item) {
-        out.push({
+  /**
+   * Objets d'une categorie, normalises puis filtres selon la case
+   * "Masquer ce qui est parti" (cochee par defaut).
+   */
+  function itemsOf(category) {
+    var hideGone = el.hideGone.checked;
+    return (category.items || [])
+      .map(function (item) {
+        return {
           id: item.id,
           status: item.status || "available",
           title: item.title || "",
           note: item.note || "",
           categoryId: category.id,
           categoryLabel: category.label
-        });
+        };
+      })
+      .filter(function (item) {
+        return !(hideGone && isGone(item));
       });
-    });
-    return out;
   }
 
   function renderFilters() {
-    var items = allItems();
-    var buttons = [{ id: "all", label: "Tout", n: items.length }];
+    var total = 0;
+    var buttons = [];
 
     data.categories.forEach(function (category) {
-      buttons.push({
-        id: category.id,
-        label: category.label,
-        n: (category.items || []).length
-      });
+      var n = itemsOf(category).length;
+      total += n;
+      buttons.push({ id: category.id, label: category.label, n: n });
     });
+
+    buttons.unshift({ id: "all", label: "Tout", n: total });
 
     el.filters.innerHTML = "";
     buttons.forEach(function (spec) {
@@ -154,7 +159,6 @@
   }
 
   function renderGallery() {
-    var hideGone = el.hideGone.checked;
     var groups = data.categories.filter(function (category) {
       return activeCategory === "all" || category.id === activeCategory;
     });
@@ -163,20 +167,7 @@
     visible = [];
 
     groups.forEach(function (category) {
-      var items = (category.items || [])
-        .map(function (item) {
-          return {
-            id: item.id,
-            status: item.status || "available",
-            title: item.title || "",
-            note: item.note || "",
-            categoryId: category.id,
-            categoryLabel: category.label
-          };
-        })
-        .filter(function (item) {
-          return !(hideGone && isGone(item));
-        });
+      var items = itemsOf(category);
 
       if (!items.length) return;
 
@@ -316,11 +307,26 @@
   function openFromHash() {
     var hash = decodeURIComponent(location.hash.replace(/^#/, ""));
     if (!hash) return;
+
     for (var i = 0; i < visible.length; i++) {
       if (hashOf(visible[i]) === hash) {
         openLightbox(i);
         return;
       }
+    }
+
+    // Lien partage vers un objet parti : les objets partis etant masques par
+    // defaut, on les reaffiche plutot que d'ouvrir une page qui ne montre rien.
+    var known = data.categories.some(function (category) {
+      return (category.items || []).some(function (item) {
+        return category.id + "/" + item.id === hash;
+      });
+    });
+    if (known && el.hideGone.checked) {
+      el.hideGone.checked = false;
+      renderFilters();
+      renderGallery();
+      openFromHash();
     }
   }
 
@@ -344,7 +350,11 @@
     el.contactFooter.href = href;
     el.contactFooter.textContent = email || "contact";
 
-    el.hideGone.addEventListener("change", renderGallery);
+    // Le compteur des filtres suit la case : il annonce ce qui est affiche.
+    el.hideGone.addEventListener("change", function () {
+      renderFilters();
+      renderGallery();
+    });
     bindLightbox();
 
     renderFilters();
