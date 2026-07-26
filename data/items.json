@@ -180,6 +180,16 @@
           "status": "sold"
         }
       ]
+    },
+    {
+      "id": "divers",
+      "label": "Divers",
+      "items": [
+        {
+          "id": "IMG_0832",
+          "status": "available"
+        }
+      ]
     }
   ]
 }
