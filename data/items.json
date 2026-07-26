@@ -6,87 +6,11 @@
   },
   "categories": [
     {
-      "id": "materiel-cave",
-      "label": "Matériel de cave",
+      "id": "divers",
+      "label": "Divers",
       "items": [
         {
-          "id": "IMG_0494",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0495",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0496",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0497",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0498",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0499",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0500",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0501",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0502",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0503",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0504",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0505",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0507",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0509",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0510",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0515",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0517",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0518",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0519",
-          "status": "available"
-        },
-        {
-          "id": "IMG_0584",
+          "id": "IMG_0832",
           "status": "available"
         }
       ]
@@ -182,11 +106,87 @@
       ]
     },
     {
-      "id": "divers",
-      "label": "Divers",
+      "id": "materiel-cave",
+      "label": "Matériel de cave",
       "items": [
         {
-          "id": "IMG_0832",
+          "id": "IMG_0494",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0495",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0496",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0497",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0498",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0499",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0500",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0501",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0502",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0503",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0504",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0505",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0507",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0509",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0510",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0515",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0517",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0518",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0519",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0584",
           "status": "available"
         }
       ]
