@@ -36,6 +36,7 @@ DEFAULT_STATUS = "available"
 KNOWN_LABELS = {
     "materiel-cave": "Materiel de cave",
     "materiel-bricolage": "Materiel de bricolage",
+    "outillage-jardin": "Outillage de jardin",
 }
 
 TEMPLATE = {
