@@ -20,7 +20,8 @@ Usage :
     python3 tools/build_images.py --force        # tout reconvertir
     python3 tools/build_images.py --clean        # supprimer les WebP orphelins
 
-Prerequis : macOS (pour `sips`, qui decode le HEIC) et Pillow.
+Prerequis : Pillow, et — uniquement pour les sources HEIC — `sips`, fourni par macOS.
+Un lot sans HEIC (JPEG, PNG, TIFF) se convertit donc sur n'importe quel systeme.
 """
 
 from __future__ import annotations
@@ -69,6 +70,8 @@ def source_images(category_dir: Path) -> list[Path]:
 def load_image(path: Path, workdir: Path) -> Image.Image:
     """Charge une image source, en passant par sips pour le HEIC."""
     if path.suffix.lower() in HEIC_SUFFIXES:
+        if not shutil.which("sips"):
+            raise RuntimeError("`sips` introuvable : le HEIC ne se decode que sur macOS")
         intermediate = workdir / (path.stem + ".png")
         result = subprocess.run(
             ["sips", "-s", "format", "png", str(path), "--out", str(intermediate)],
@@ -180,6 +183,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    if not shutil.which("sips"):
-        sys.exit("`sips` introuvable : ce script necessite macOS pour decoder le HEIC.")
     sys.exit(main())

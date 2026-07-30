@@ -102,6 +102,10 @@
         {
           "id": "IMG_0595",
           "status": "sold"
+        },
+        {
+          "id": "IMG_0846",
+          "status": "available"
         }
       ]
     },
@@ -187,6 +191,28 @@
         },
         {
           "id": "IMG_0584",
+          "status": "available"
+        }
+      ]
+    },
+    {
+      "id": "outillage-jardin",
+      "label": "Outillage de jardin",
+      "items": [
+        {
+          "id": "IMG_0844",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0845",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0847",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0849",
           "status": "available"
         }
       ]
