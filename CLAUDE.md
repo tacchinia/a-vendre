@@ -98,6 +98,26 @@ deviné depuis le nom du dossier — le corriger à la main dans le JSON
 (le libellé est ce qui s'affiche sur le site), et l'ajouter au passage à
 `KNOWN_LABELS` dans `tools/sync_items.py`.
 
+### Avec Claude Code : `/ajouter-photos`
+
+La commande `/ajouter-photos` (définie dans
+`.claude/commands/ajouter-photos.md`) enchaîne tout ce qui précède : elle
+regarde chaque photo, en déduit la catégorie, range le fichier dans
+`pictures/<categorie>/`, déclare les nouvelles catégories dans `KNOWN_LABELS`,
+lance les deux scripts, vérifie le résultat et commite sur `main`.
+
+```text
+/ajouter-photos ~/Desktop/photos-a-vendre/
+```
+
+Il faut lui donner des **chemins de fichiers** (glisser-déposer dans le
+terminal ou chemin d'un dossier) : une image simplement collée dans le prompt
+n'existe pas sur le disque et ne peut pas être enregistrée.
+
+Note : dans Claude Code, chaque commande shell part d'un shell neuf —
+`source …/activate` ne survit pas d'un appel au suivant. Les scripts sont donc
+lancés via `~/.pyenv/versions/.venv/bin/python3` directement.
+
 ## Marquer un objet vendu ou réservé
 
 Modifier son `status` dans `data/items.json`, puis commiter :
