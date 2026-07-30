@@ -105,7 +105,9 @@
         },
         {
           "id": "IMG_0846",
-          "status": "available"
+          "status": "available",
+          "title": "Aspirateur eau et poussière Kärcher MV 5",
+          "note": "aspire l'eau et la poussière ; accessoires à voir sur place"
         }
       ]
     },
@@ -201,19 +203,27 @@
       "items": [
         {
           "id": "IMG_0844",
-          "status": "available"
+          "status": "available",
+          "title": "Taille-haie thermique Maruyama HT2350D-RX",
+          "note": "moteur essence, protège-lame fourni — à essayer sur place"
         },
         {
           "id": "IMG_0845",
-          "status": "available"
+          "status": "available",
+          "title": "Tronçonneuse électrique EKS 1800-40",
+          "note": "1800 W sur secteur, guide Oregon de 40 cm — la chaîne n'est pas montée"
         },
         {
           "id": "IMG_0847",
-          "status": "available"
+          "status": "available",
+          "title": "Sécateur électrique Pellenc Lixion",
+          "note": "coffret complet : sécateur, batterie, chargeur, holster et harnais — batterie à tester"
         },
         {
           "id": "IMG_0849",
-          "status": "available"
+          "status": "available",
+          "title": "Cisaille à haie manuelle",
+          "note": "manches en bois, lames à affûter"
         }
       ]
     }
