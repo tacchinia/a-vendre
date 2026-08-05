@@ -12,6 +12,36 @@
         {
           "id": "IMG_0832",
           "status": "available"
+        },
+        {
+          "id": "IMG_0835",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0836",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0838",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0839",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0848",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0619",
+          "status": "available",
+          "title": "Vinocave 16l",
+          "note": "Consommation 0.5kwh/24h"
+        },
+        {
+          "id": "IMG_0856",
+          "status": "available"
         }
       ]
     },
@@ -107,7 +137,73 @@
           "id": "IMG_0846",
           "status": "available",
           "title": "Aspirateur eau et poussière Kärcher MV 5",
-          "note": "aspire l'eau et la poussière ; accessoires à voir sur place"
+          "note": ""
+        },
+        {
+          "id": "IMG_0840",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0841",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0843",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0845",
+          "status": "available",
+          "title": "Tronçonneuse électrique EKS 1800-40",
+          "note": "1800 W sur secteur, guide de 40cm"
+        },
+        {
+          "id": "IMG_0857",
+          "status": "available"
+        },
+        {
+          "id": "image",
+          "status": "available"
+        },
+        {
+          "id": "image2",
+          "status": "available"
+        }
+      ]
+    },
+    {
+      "id": "outillage-jardin",
+      "label": "Outillage de jardin",
+      "items": [
+        {
+          "id": "IMG_0844",
+          "status": "available",
+          "title": "Taille-haie thermique Maruyama HT2350D-RX",
+          "note": ""
+        },
+        {
+          "id": "IMG_0847",
+          "status": "available",
+          "title": "Sécateur électrique Pellenc Lixion",
+          "note": "coffret complet : sécateur, batterie, chargeur, holster et harnais — batterie à tester"
+        },
+        {
+          "id": "IMG_0849",
+          "status": "available",
+          "title": "Cisaille à haie manuelle",
+          "note": ""
+        },
+        {
+          "id": "IMG_0842",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0855",
+          "status": "available"
+        },
+        {
+          "id": "IMG_0860",
+          "status": "available"
         }
       ]
     },
@@ -194,36 +290,6 @@
         {
           "id": "IMG_0584",
           "status": "available"
-        }
-      ]
-    },
-    {
-      "id": "outillage-jardin",
-      "label": "Outillage de jardin",
-      "items": [
-        {
-          "id": "IMG_0844",
-          "status": "available",
-          "title": "Taille-haie thermique Maruyama HT2350D-RX",
-          "note": "moteur essence, protège-lame fourni — à essayer sur place"
-        },
-        {
-          "id": "IMG_0845",
-          "status": "available",
-          "title": "Tronçonneuse électrique EKS 1800-40",
-          "note": "1800 W sur secteur, guide Oregon de 40 cm — la chaîne n'est pas montée"
-        },
-        {
-          "id": "IMG_0847",
-          "status": "available",
-          "title": "Sécateur électrique Pellenc Lixion",
-          "note": "coffret complet : sécateur, batterie, chargeur, holster et harnais — batterie à tester"
-        },
-        {
-          "id": "IMG_0849",
-          "status": "available",
-          "title": "Cisaille à haie manuelle",
-          "note": "manches en bois, lames à affûter"
         }
       ]
     }
